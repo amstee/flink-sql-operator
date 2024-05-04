@@ -1,0 +1,32 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - flink.amstee.com
+  resources:
+  - flinksqljobs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - flink.amstee.com
+  resources:
+  - flinksqljobs/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - flink.amstee.com
+  resources:
+  - flinksqljobs/status
+  verbs:
+  - get
+  - patch
+  - update

@@ -1,0 +1,9 @@
+apiVersion: flink.amstee.com/v1alpha1
+kind: FlinkSqlJob
+metadata:
+  labels:
+    app.kubernetes.io/name: flink-sql-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: flinksqljob-sample
+spec:
+  # TODO(user): Add fields here
