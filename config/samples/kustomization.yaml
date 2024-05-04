@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- flink_v1alpha1_flinksqljob.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples
